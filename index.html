@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスク管理ボード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>タスク管理ボード</h1>
+        <button id="add-list-btn" class="add-list-btn">+ リストを追加</button>
+    </header>
+    
+    <main class="board" id="board">
+        <!-- リストがここに動的に追加されます -->
+    </main>
+
+    <!-- モーダル -->
+    <div id="card-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>カードを編集</h2>
+            <textarea id="card-edit-textarea" rows="4"></textarea>
+            <div class="modal-buttons">
+                <button id="save-card-btn" class="save-btn">保存</button>
+                <button id="delete-card-btn" class="delete-btn">削除</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
